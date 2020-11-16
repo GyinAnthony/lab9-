@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div>
+        <h1>Required Tennis Gears! Shop EECS 448</h1>
+    </div>
+<h2>
+    Login Info 
+</h2>
+<label> E-mail:</label>
+<input type="email" id="email" name="email" placeholder="something@something.com">
+
+<div>
+<label for="newpass">Password:</label>
+<input type="password" id="newpass" name="passwords" required>
+
+</div>
+
+<form action = "customerBackend.php" method = "post" onsubmit = "return checkform()">
+<p> Tennis Racquet - HeadMP instinct | $100</p>
+<input type = "number" id = "racquet_quantity" name = "racquet_quantity" min = "0" required >
+ <br>
+ <p> Tennis Shoe - Adidas Barricade | $50</p>
+ <input type = "number" id = "shoe_quantity" name = "shoe_quantity" min = "0" required >
+<br>
+ <p> Babalot Tennis Damper | $10</p>
+<input type = "number" id = "damper_quantity" name = "damper_quantity" min = "0" required >
+<br>
+<h2> Shipping Options </h2>
+<div id = "shipping">
+    <input type="radio" name="ship" id="free" value="f"/>
+    <label for="free">7 Days - Free!</label>
+    <input type="radio" name="ship" id="ovn" value="o"/>
+    <label for="onv">Overnight - $50.00</label>
+    <input type="radio" name="ship" id="sd" value="s"/>
+    <label for="sd">3 Day - $5.00</label>
+</div>
+<input type="submit" value="Submit Order">
+<input type="reset" value="Reset Form">
+</form>
+<script type="text/javascript" src="formChecker.js"></script>
+<link rel="stylesheet" href="style.css" type="text/css">
+</body>
+</html>
